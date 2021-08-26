@@ -1,6 +1,6 @@
 # driversf1
 Page about f1
 
-Practising with vanilla JS.
+Practising vanilla JS.
 
 In process. . .
