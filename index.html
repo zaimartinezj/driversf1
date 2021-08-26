@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drivers Standings</title>
+</head>
+<body>
+
+    <aside class="panel">
+        <nav class="menu">
+            <a class="linkMenu" href="#yearTable">DRIVER STANDINGS</a>
+            <a class="linkMenu">SOON</a>
+            <a class="linkMenu">SOON</a>
+        </nav>
+    </aside>
+
+    
+    <a class="icon" >
+        <i class="icon fa fa-bars fa-3x"></i>
+        <!-- <i class="fas fa-times"></i> -->
+    </a>
+    
+  <h1>DRIVER STANDINGS</h1>
+
+    <form id="formYear">
+        <input placeholder="Year between 1950-2021" type="text" name="year">
+        <input type="submit" value="Search">
+    </form>
+
+    <p id="yearTable">Season: 2021</p>
+
+  <div class="box-table">
+
+    
+        <table class="table"> 
+            <thead>
+            <tr>
+                <th>Position</th>
+                <th>Driver</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+            </thead>
+
+
+            <tbody id="actualTable">
+                
+            </tbody>
+
+        </table>
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+</html>

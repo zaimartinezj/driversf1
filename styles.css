@@ -1,0 +1,122 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    height:100vh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin:0;
+    position: relative;
+    text-align: center;
+    background-color:rgba(212,102,232);
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.box-table{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+td{
+    border-bottom: 1px solid black;
+}
+
+th{
+    border-bottom: 2px solid black;
+
+}
+
+tr{
+    transition: background-color .5s ease;
+}
+
+tr:hover{
+    background-color: rgba(212,102,232,0.5);
+}
+
+/* form input[type="button"]{
+   
+} */
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.icon{
+    display:flex;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(212,102,232);
+    position:fixed;
+    z-index:999;
+    bottom: 1vh;
+    right: 1vh;
+}
+
+.icon:hover{
+    background-color: rgba(180, 134, 189, 0.836);
+    cursor:pointer;
+}
+
+.panel{
+    position: fixed;
+    transform: translate(0, -100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(11, 8, 12, 0.671);
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    transition: transform 2s ease;
+}
+
+.panel.is-active {
+    transform: translate(0, 0);
+  }
+
+.menu{
+    height:100%;
+    width: 100%; /*hereda del panel*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align:center;
+
+}
+
+.menu a{
+    width:100%;
+    text-align:center;
+    padding: 2rem;
+    color:rgba(180, 134, 189, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.menu a:hover{
+    background-color: rgba(160, 85, 173, 0.699);
+    color: black;
+    cursor:pointer;
+}
