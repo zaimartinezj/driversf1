@@ -103,15 +103,17 @@ document.addEventListener("click", (e)=>{
         $panel.classList.remove("is-active")
     }
 
-    if(e.target.matches(".icon")){
-    $panel.classList.toggle("is-active");
-    if($icon.className === "fa fa-bars fa-3x"){
-       $icon.className = "";
-       $icon.innerHTML= "X";
+    if(e.target.matches(".iconclass")){
+        if(e.target.classList.contains("fa-bars")){
+            $panel.classList.toggle("is-active");
+            e.target.classList.replace("fa-bars", "fa-times")
+            $icon.classList.replace("fa-bars", "fa-times")
+        }else if(e.target.classList.contains("fa-times")){
+            $panel.classList.toggle("is-active");
+            e.target.classList.replace("fa-times", "fa-bars")
+            $icon.classList.replace("fa-times", "fa-bars")
+        }
+        
     }
-    else{
-        $icon.innerHTML= "";
-        $icon.className = "fa fa-bars fa-3x";
-    }
-    }
+    
 })
