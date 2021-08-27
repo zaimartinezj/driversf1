@@ -32,12 +32,6 @@ const getDrivers =  (year) => {
 
     })
 
-// const response = await fetch(`https://ergast.com/api/f1/${year}/driverStandings.json`)
-// const data = await response.json();
-// const listDrivers = [...data.MRData.StandingsTable.StandingsLists[0].DriverStandings]
-//     // })
-
-//     return listDrivers;
 }
 
 
