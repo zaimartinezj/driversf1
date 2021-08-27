@@ -101,6 +101,8 @@ document.addEventListener("click", (e)=>{
 
     if(e.target.matches(".linkMenu")){
         $panel.classList.remove("is-active")
+        e.target.classList.replace("fa-times", "fa-bars")
+        $icon.classList.replace("fa-times", "fa-bars")
     }
 
     if(e.target.matches(".iconclass")){
@@ -117,3 +119,4 @@ document.addEventListener("click", (e)=>{
     }
     
 })
+
