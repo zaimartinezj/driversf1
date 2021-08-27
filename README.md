@@ -1,6 +1,5 @@
 # driversf1
 Page about f1
 
-Practising vanilla JS.
-
-In process. . .
+Vanilla JS.
+Using API http://ergast.com/mrd/ 
