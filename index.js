@@ -7,6 +7,14 @@ const $botonMenu = document.querySelector(".icon");
 const $panel = document.querySelector(".panel");
 const $icon = document.querySelector("i");
 const $aMenu = document.querySelectorAll("a");
+const $year = document.getElementById("year");
+const $inboxYear = document.querySelector("#inboxYear");
+
+const currentYear = new Date().getFullYear();
+
+$year.innerHTML = currentYear;
+$inboxYear.setAttribute("placeholder", "Insert year between 1950 and " + currentYear);
+$inboxYear.setAttribute('size',$inboxYear.getAttribute('placeholder').length);
 
 const validateYear = (year) => {
     if (year >= 1950 && year <= 2021){

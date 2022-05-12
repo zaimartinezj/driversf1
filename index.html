@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Drivers Standings</title>
+    <title>Driver Standings</title>
 </head>
 <body>
 
@@ -24,11 +24,11 @@
   <h1>DRIVER STANDINGS</h1>
 
     <form id="formYear">
-        <input placeholder="Year between 1950-2021" type="text" name="year">
+        <input id="inboxYear" placeholder="Year between 1950-2021" type="text" name="year">
         <input type="submit" value="Search">
     </form>
 
-    <p id="yearTable">Season: 2021</p>
+    <p id="yearTable">Season: <span id="year"></span></p>
 
   <div class="box-table">
 
